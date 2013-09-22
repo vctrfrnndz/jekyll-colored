@@ -1,1 +1,133 @@
 @import url("kick.less");
+
+.inner {
+    padding: 0 5%;
+}
+
+.individual {
+    .go-back {
+        display: block;
+    }
+}
+
+//
+// Header
+//
+
+.head {
+    h1 {
+        margin: 0;
+    }
+
+    .cover {
+        display: none;
+    }
+
+    .hgroup {
+        position: relative;
+    }
+
+    .logo .label {
+        display: none;
+    }
+
+    .go-back {
+        margin: 12px 12px;
+        float: left;
+        font-size: 2em;
+    }
+
+    .toggle-menu {
+        position: static;
+        margin: 8px 12px;
+        float: right;
+    }
+}
+
+//
+// Main Menu
+//
+
+.menu {
+    ul {
+        .row-list(8%);
+        text-align: center;
+    }
+    
+    .item {
+        padding: 1em 0;
+
+        a {
+            font-size: 1.2em;
+        }
+    }
+}
+
+//
+// Content Area
+//
+
+.content {
+    margin-top: 1em;
+
+    .date,
+    article h2 {
+        text-align: center;
+    }
+}
+
+
+//
+// Colophon
+//
+
+.colophon {
+    .inner;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .photo {
+        .inline-block;
+        .round(100%);
+        .size(80px);
+
+        margin-bottom: 1em;
+    }
+
+    .author {
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+.find-me {
+    ul {
+        .row-list();
+        margin-top: 0.5em;
+
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+
+        li {
+            width: auto;
+            text-align: left;
+            font-size: 1em;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: left;
+            }
+        }
+    }
+}
+

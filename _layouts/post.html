@@ -1,9 +1,9 @@
----
-layout: default
----
-
-        <article class="post post-single">
-            <time class="date">{{ page.date }}</time>
-            <h2>{{ page.title }}</h2>
-            {{ page.content }}
-        </article>
+{% include header.html %}
+            <section class="content inner">
+                <article class="post post-single">
+                    <time class="date">{{ page.date }}</time>
+                    <h2>{{ page.title }}</h2>
+                    {{ page.content }}
+                </article>
+            </section>
+{% include footer.html %}

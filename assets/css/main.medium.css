@@ -1,0 +1,112 @@
+/*!
+ * kick.less v0.2.2 by @vctrfrnndz (http://vctrfrnndz.com/projects/kick)
+ */
+.inner {
+  padding: 0 5%;
+}
+.individual .go-back {
+  display: block;
+}
+.head h1 {
+  margin: 0;
+}
+.head .cover {
+  display: none;
+}
+.head .hgroup {
+  position: relative;
+}
+.head .logo .label {
+  display: none;
+}
+.head .go-back {
+  margin: 12px 12px;
+  float: left;
+  font-size: 2em;
+}
+.head .toggle-menu {
+  position: static;
+  margin: 8px 12px;
+  float: right;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu ul li  + li {
+  margin-left: 8%;
+}
+.menu .item {
+  padding: 1em 0;
+}
+.menu .item a {
+  font-size: 1.2em;
+}
+.content {
+  margin-top: 1em;
+}
+.content .date,
+.content article h2 {
+  text-align: center;
+}
+.colophon {
+  padding: 0 5%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.colophon a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.colophon .photo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+}
+.colophon .author {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+.find-me ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5em;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+.find-me ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+.find-me ul li  + li {
+  margin-left: 1em;
+}
+.find-me ul li {
+  width: auto;
+  text-align: left;
+  font-size: 1em;
+}
+.find-me ul li:first-child {
+  text-align: left;
+}
+.find-me ul li:last-child {
+  text-align: left;
+}
