@@ -58,28 +58,8 @@
     box-sizing: content-box;
 }
 
-//
-// Helpers
-//
-
-// Hide, show or invisible helpers
-.hide { 
-    display: none;
-}
-.show { 
-    display:block;
-}
-.invisible {
-    visibility: hidden;
-}
-
-// Remove gap from the bottom of img elements
-img {
-    vertical-align: middle;
-}
-
 // Group class for clearing elements containing floats
-.group {
+.group() {
     &:before,
     &:after {
         content: " ";
@@ -94,7 +74,7 @@ img {
 }
 
 // Or use a .clearfix element
-.clearfix {
+.clearfix() {
     clear:both;
 }
 
@@ -116,7 +96,7 @@ img {
  
 // Sample grid
  
-.grid() {
+.is-grid() {
     .group;
  
     &.grid-1 {
@@ -145,7 +125,7 @@ img {
 }
 
 // Convert a list into row format
-.row-list() {
+.row-list(@padding: 1em) {
     list-style: none;
     margin: 0; padding: 0;
 
@@ -154,7 +134,7 @@ img {
         vertical-align: top;
 
         & + li {
-            margin-left:1em;
+            margin-left: @padding;
         }
     }
 }

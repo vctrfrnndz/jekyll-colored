@@ -1,6 +1,20 @@
 @import url("kick.less");
+@import url("../fonts/vctrfrnndz/style.css");
 
-* { .fix-box-sizing; }
+//
+// Variables
+//
+
+@transparentBg: rgba(0, 0, 0, 0.05);
+
+//
+// Generalia
+//
+
+* { 
+    .fix-box-sizing;
+    .smooth-text;
+}
 
 .normalize;
 
@@ -8,4 +22,231 @@ body {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: 110%;
     font-weight: 200;
+
+    &.green {
+        background-color: #A0ECC9;
+    }
+
+    &.orange {
+        background-color: #F15F4B;
+    }
+
+    &.blue {
+        background-color: #A0CEEC;
+    }
+
+    &.purple {
+        background-color: #BC86C9;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+hr {
+    opacity: 0.1;
+    border-bottom: 0;
+    border-width: 1px;
+    border-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.35em;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+img {
+    vertical-align: middle;
+}
+
+.inner {
+    padding: 0 24px;
+    padding: 0 1.5rem;
+}
+
+.no-label {
+    .label {
+        display: none;
+    }
+}
+
+.date {
+    visibility: hidden;
+
+    &.rendered {
+        visibility: visible;
+    }
+}
+
+.all {
+    min-width: 300px;
+}
+
+//
+// Header
+//
+
+.head {
+    .cover {
+        background: url('../images/avatar.jpg') no-repeat;
+        background-position: 0 100%;
+        background-size: 100%;
+        .size(100%, 150px);
+    }
+
+
+    .hgroup {
+        position: relative;
+    }
+
+    .logo .label {
+        .inner;
+
+        font-size: 1.2em;
+        line-height: 0.9em;
+
+        max-width: 200px;
+        margin-top: 0.8em;
+        display: block;
+    }
+
+    .icon-arrowleft {
+        display: none;
+    }
+
+    .toggle-menu {
+        position: absolute;
+        top: -22px;
+        right: 12px;
+        font-size: 2.5em;
+        display: inline-block;
+
+        &.is-active {
+            opacity: 0.4;
+        }
+    }
+}
+
+//
+// Main Menu
+//
+
+.menu {
+    background-color: @transparentBg;
+    max-height: 0;
+    overflow: hidden;
+    
+    -webkit-transition: max-height 600ms ease-in-out;
+    -moz-transition: max-height 600ms ease-in-out;
+    transition: max-height 600ms ease-in-out;
+
+    &.open {
+        max-height: 800px;    
+    }
+
+    ul {
+        .reset-this;
+        .inner;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    .item {
+        padding: 0.6em 0;
+
+        &.current {
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 1.8em;
+            text-decoration: none;
+        }
+    }
+
+}
+
+//
+// Content Area
+//
+
+.content {
+    .inner;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    .date {
+        display: block;
+        margin-bottom: 0.3em;
+        opacity: 0.5;
+
+        font-size: 0.95em;
+        font-weight: 400;
+    }
+
+    article {
+        font-weight: 400;
+        margin-bottom: 1.5em;
+
+        h2 {
+            font-size: 1.8em;
+            line-height: 1em;
+        }
+
+        & + article {
+            hr {
+                display: none;
+            }
+        }
+    }
+}
+
+//
+// Colophon
+//
+
+.colophon {
+    .inner;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    background-color: @transparentBg;
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.find-me {
+    ul {
+        .row-list(0);
+        margin-top: 1em;
+
+        width: 100%;
+        font-size: 1.5em;
+
+        li {
+            width: 31%;
+            text-align: center;
+            font-size: 1.3em;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
 }
