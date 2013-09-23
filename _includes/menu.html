@@ -1,9 +1,9 @@
 <nav class="menu">
     <ul class="inner">
-        <li class="item current"><a href="">Writing</a></li>
-        <li class="item"><a href="">Pictures</a></li>
-        <li class="item"><a href="">Projects</a></li>
-        <li class="item"><a href="">Colophon</a></li>
+        <li class="item {% if page.url == site.url %}current{% endif %}"><a href="{{ site.url }}/writing">Writing</a></li>
+        <li class="item {% if page.title == 'Pictures' %}current{% endif %}"><a href="{{ site.pictures }}/pictures">Pictures</a></li>
+        <li class="item {% if page.title == 'Projects' %}current{% endif %}"><a href="{{ site.projects }}/projects">Projects</a></li>
+        <li class="item {% if page.title == 'Colophon' %}current{% endif %}"><a href="{{ site.colophon }}/colophon">Colophon</a></li>
     </ul>
 </nav>
 

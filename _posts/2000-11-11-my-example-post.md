@@ -5,4 +5,23 @@ slug: my-example-post
 layout: post
 ---
 
-Here goes my *example* post.
+- a
+- list
+
+{% highlight javascript %}
+function formatDates() {
+    $('time.date').each(function() {
+        var date = $(this),
+            dateString = date.text(),
+            dateFormat;
+
+        dateFormat = moment(dateString).fromNow();
+        date.text('About ' + dateFormat).addClass('rendered');
+    });
+};
+{% endhighlight %}
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+[Link to Google](https://www.google.com)

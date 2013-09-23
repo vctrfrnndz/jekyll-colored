@@ -21,15 +21,18 @@
     <body>
         <div class="all {% if page.layout == 'post' || 'page' %}individual{% endif %}">
             <section class="head">
-                <div class="cover"></div>
+                <a href="{{ site.url }}" class="cover"></a>
 
                 <div class="hgroup">
+                    {% include menu.html %}
+                    
+                    {% if page.layout != 'post' %}
                     <h1>
                         <a class="logo has-icon" href="{{ site.url }}/">
                             <span class="label inner">{{ site.name }}</span>
                         </a>
                     </h1>
+                    {% endif %}
 
-                    {% include menu.html %}
                 </div>
             </section>

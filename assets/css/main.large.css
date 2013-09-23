@@ -2,6 +2,10 @@
  * kick.less v0.2.2 by @vctrfrnndz (http://vctrfrnndz.com/projects/kick)
  */
 .inner {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.extra {
+  width: 120%;
+  margin-left: -10%;
 }

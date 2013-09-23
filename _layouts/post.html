@@ -1,9 +1,11 @@
 {% include header.html %}
             <section class="content inner">
                 <article class="post post-single">
+                    {% if page.date %}
                     <time class="date">{{ page.date }}</time>
+                    {% endif %}
                     <h2>{{ page.title }}</h2>
-                    {{ page.content }}
+                    {{ content }}
                 </article>
             </section>
 {% include footer.html %}

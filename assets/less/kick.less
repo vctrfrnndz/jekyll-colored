@@ -309,3 +309,20 @@
     -o-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
 }
+
+.webkit-scrollbar(@scrollbar-color: rgba(255, 255, 255, 0.15),
+                  @thumb-color: rgba(255,255,255,0.2),
+                  @size: 0.8em,
+                  @thumb-radius: 0) {
+
+    &::-webkit-scrollbar {
+        height: @size;
+        background: @scrollbar-color;
+    }
+
+    &::-webkit-scrollbar-thumb:horizontal {
+        background: @thumb-color;
+        -webkit-border-radius: @thumb-radius;
+        border-radius: @thumb-radius;
+    }
+}
