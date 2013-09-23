@@ -1,18 +1,27 @@
-<nav class="menu">
-    <ul class="inner">
-        <li class="item {% if page.url == site.url %}current{% endif %}"><a href="{{ site.url }}/writing">Writing</a></li>
-        <li class="item {% if page.title == 'Pictures' %}current{% endif %}"><a href="{{ site.pictures }}/pictures">Pictures</a></li>
-        <li class="item {% if page.title == 'Projects' %}current{% endif %}"><a href="{{ site.projects }}/projects">Projects</a></li>
-        <li class="item {% if page.title == 'Colophon' %}current{% endif %}"><a href="{{ site.colophon }}/colophon">Colophon</a></li>
-    </ul>
-</nav>
+                    <nav class="menu">
+                        <ul class="inner">
+                            {% for link in site.navigation %}
+                                {% assign current = nil %}
+                                {% if page.title == link.text %}
+                                    {% assign current = 'current' %}
+                                {% endif %}
+                                {% if link.text == 'Writing' and paginator or page.layout == 'post' %}
+                                    {% assign current = 'current' %}
+                                {% endif %}
 
-<a class="toggle-menu has-icon no-label" title="Toggle menu" href="">
-    <span class="icon icon-menu"></span>
-    <span class="label">Menu</span>
-</a>
+                                <li class="item {{ current }}">
+                                    <a href="{{ site.url }}{{ link.url }}">{{ link.text }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
 
-<a class="go-back has-icon no-label" title="Go back" href="{{ site.url }}">
-    <span class="icon icon-arrowleft"></span>
-    <span class="label">Go back</span>
-</a>
+                    <a class="toggle-menu has-icon no-label" title="Toggle menu" href="">
+                        <span class="icon icon-menu"></span>
+                        <span class="label">Menu</span>
+                    </a>
+
+                    <a class="go-back has-icon no-label" title="Go back" href="{{ site.url }}">
+                        <span class="icon icon-arrowleft"></span>
+                        <span class="label">Go back</span>
+                    </a>

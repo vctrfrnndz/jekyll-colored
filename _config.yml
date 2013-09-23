@@ -6,3 +6,13 @@ markdown: maruku
 permalink: /:year/:month/:title
 pygments: true
 destination: public
+
+navigation:
+- text: Writing
+  url: /writing
+- text: Pictures
+  url: /pictures
+- text: Projects
+  url: /projects
+- text: Colophon
+  url: /colophon

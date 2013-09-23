@@ -19,13 +19,13 @@
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div class="all {% if page.layout == 'post' || 'page' %}individual{% endif %}">
+        <div class="all {% if page.layout == 'post' %}individual{% endif %}">
             <section class="head">
                 <a href="{{ site.url }}" class="cover"></a>
 
                 <div class="hgroup">
-                    {% include menu.html %}
-                    
+{% include menu.html %}
+
                     {% if page.layout != 'post' %}
                     <h1>
                         <a class="logo has-icon" href="{{ site.url }}/">
@@ -33,6 +33,5 @@
                         </a>
                     </h1>
                     {% endif %}
-
                 </div>
             </section>
