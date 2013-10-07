@@ -13,6 +13,9 @@
 .individual .content {
   margin-top: 2em;
 }
+.individual article h2 {
+  padding-right: 0;
+}
 .head h1 {
   margin: 0;
 }
@@ -51,10 +54,10 @@
   margin-left: 8%;
 }
 .menu .item {
-  padding: 1em 0;
+  padding: 1.2em 0;
 }
 .menu .item a {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .content {
   max-width: 900px;
@@ -66,6 +69,15 @@
 .content .date,
 .content article h2 {
   text-align: center;
+}
+.content .centered {
+  text-align: center;
+}
+.content .float-l {
+  float: left;
+}
+.content .float-r {
+  float: right;
 }
 .colophon {
   padding: 0 5%;
@@ -121,4 +133,26 @@
 }
 .find-me ul li:last-child {
   text-align: left;
+}
+.grid.grid-photos {
+  *zoom: 1;
+  width: auto;
+  margin-right: 0;
+}
+.grid.grid-photos:before,
+.grid.grid-photos:after {
+  content: " ";
+  display: table;
+}
+.grid.grid-photos:after {
+  clear: both;
+}
+.grid.grid-photos .item {
+  display: block;
+  float: left;
+  width: 33.333333333333336%;
+  padding-right: 0;
+}
+.grid.grid-photos .item {
+  margin-bottom: 0;
 }

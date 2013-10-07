@@ -82,45 +82,17 @@
 // Grids & layout
 //
  
-.create-grid(@cols: 1, @gutter: 0) { 
+.create-grid(@cols: 1, @gutter: 0) {
+    .group;
     width: auto;
     margin-right: -@gutter;
  
     .item {
+        display: block;
         float: left;
         width: (100% / @cols);
  
         padding-right: @gutter; 
-    }
-}
- 
-// Sample grid
- 
-.is-grid() {
-    .group;
- 
-    &.grid-1 {
-        .create-grid(1);
-    }
- 
-    &.grid-2 {
-        .create-grid(2, 1%);
-    }
- 
-    &.grid-3 {
-        .create-grid(3, 1%);
-    }
- 
-    &.grid-4 {
-        .create-grid(4, 1%);
-    }
-
-    &.grid-5 {
-        .create-grid(5, 1%);
-    }
-
-    &.grid-6 {
-        .create-grid(6, 1%);
     }
 }
 

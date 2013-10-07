@@ -6,6 +6,9 @@
         
         <script src="{{ site.url }}/assets/js/vendor/moment.min.js"></script>
         <script src="{{ site.url }}/assets/js/main.js"></script>
+        {% for js in page.js %}
+        <script src="{{ site.url }}/assets/js/{{ js.src }}"></script>
+        {% endfor %}
 
     </body>
 </html>

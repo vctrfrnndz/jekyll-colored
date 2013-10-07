@@ -9,24 +9,14 @@
                     <h4 class="label">Find me elsewhere</h4>
 
                     <ul>
+                        {% for network in site.social %}
                         <li>
-                            <a class="has-icon" title="twitter" href="">
-                                <span class="label">Twitter</span>
-                                <span class="icon icon-twitter"></span>
+                            <a title="{{ network.name | capitalize }}" href="{{ network.url }}">
+                                <span class="label">{{ network.name | capitalize }}</span>
+                                <span class="icon icon-{{ network.name | downcase }}"></span>
                             </a>
                         </li>
-                        <li>
-                            <a class="has-icon" title="github" href="">
-                                <span class="label">Github</span>
-                                <span class="icon icon-github"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="has-icon" title="dribbble" href="">
-                                <span class="label">Dribbble</span>
-                                <span class="icon icon-dribbble"></span>
-                            </a>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </section>

@@ -8,6 +8,7 @@ layout: post
 - a
 - list
 
+<div class="extra">
 {% highlight javascript %}
 function formatDates() {
     $('time.date').each(function() {
@@ -20,6 +21,7 @@ function formatDates() {
     });
 };
 {% endhighlight %}
+</div>
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.

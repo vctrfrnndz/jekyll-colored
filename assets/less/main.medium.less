@@ -20,6 +20,10 @@
     .content {
         margin-top: 2em;
     }
+
+    article h2 {
+        padding-right: 0;
+    }
 }
 
 //
@@ -69,10 +73,10 @@
     }
     
     .item {
-        padding: 1em 0;
+        padding: 1.2em 0;
 
         a {
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
     }
 }
@@ -93,6 +97,18 @@
     .date,
     article h2 {
         text-align: center;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .float-l {
+        float: left;
+    }
+
+    .float-r {
+        float: right;
     }
 }
 
@@ -147,6 +163,20 @@
             &:last-child {
                 text-align: left;
             }
+        }
+    }
+}
+
+//
+// Grid
+//
+
+.grid {
+    &.grid-photos {
+        .create-grid(3);
+
+        .item {
+            margin-bottom: 0;
         }
     }
 }

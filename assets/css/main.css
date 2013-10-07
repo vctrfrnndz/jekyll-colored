@@ -6,9 +6,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
 }
 /* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
 article,
@@ -281,9 +278,6 @@ a {
 p {
   line-height: 1.35em;
 }
-p a {
-  text-decoration: underline;
-}
 ul {
   list-style: square;
 }
@@ -390,6 +384,17 @@ img {
   padding-bottom: 1em;
   min-height: 700px;
 }
+.content a {
+  text-decoration: underline;
+}
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a,
+.content h5 a,
+.content h6 a {
+  text-decoration: none;
+}
 .content article {
   font-weight: 400;
   margin-bottom: 1.5em;
@@ -448,6 +453,56 @@ img {
 }
 .individual .logo .label {
   display: none;
+}
+.individual article h2 {
+  padding-right: 1em;
+}
+.grid {
+  *zoom: 1;
+  width: auto;
+  margin-right: 0;
+}
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid .item {
+  display: block;
+  float: left;
+  width: 33.333333333333336%;
+  padding-right: 0;
+}
+.grid .item img {
+  max-width: 100%;
+}
+.grid.grid-photos {
+  *zoom: 1;
+  width: auto;
+  margin-right: 0;
+}
+.grid.grid-photos:before,
+.grid.grid-photos:after {
+  content: " ";
+  display: table;
+}
+.grid.grid-photos:after {
+  clear: both;
+}
+.grid.grid-photos .item {
+  display: block;
+  float: left;
+  width: 100%;
+  padding-right: 0;
+}
+.grid.grid-photos .item {
+  text-align: center;
+}
+.grid.grid-photos .item img {
+  width: 100%;
 }
 .highlight {
   background-color: #073642;

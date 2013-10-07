@@ -16,10 +16,10 @@
 
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div class="all {% if page.layout == 'post' %}individual{% endif %}">
+        <div class="all{% if page.layout == 'post' %} individual{% endif %} {{ page.layout }}">
             <section class="head">
                 <a href="{{ site.url }}" class="cover"></a>
 
@@ -28,7 +28,7 @@
 
                     {% if page.layout != 'post' %}
                     <h1>
-                        <a class="logo has-icon" href="{{ site.url }}/">
+                        <a class="logo" href="{{ site.url }}/">
                             <span class="label inner">{{ site.name }}</span>
                         </a>
                     </h1>
