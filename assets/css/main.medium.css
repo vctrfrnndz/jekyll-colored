@@ -50,7 +50,7 @@
   display: inline-block;
   vertical-align: top;
 }
-.menu ul li  + li {
+.menu ul li + li {
   margin-left: 8%;
 }
 .menu .item {
@@ -120,7 +120,7 @@
   display: inline-block;
   vertical-align: top;
 }
-.find-me ul li  + li {
+.find-me ul li + li {
   margin-left: 1em;
 }
 .find-me ul li {

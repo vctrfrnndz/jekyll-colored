@@ -403,7 +403,7 @@ img {
   font-size: 1.8em;
   line-height: 1.15em;
 }
-.content article  + article hr {
+.content article + article hr {
   display: none;
 }
 .date {
@@ -437,7 +437,7 @@ img {
   display: inline-block;
   vertical-align: top;
 }
-.find-me ul li  + li {
+.find-me ul li + li {
   margin-left: 0;
 }
 .find-me ul li {

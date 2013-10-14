@@ -5,6 +5,7 @@ paginate: 10
 markdown: maruku
 permalink: /:year/:month/:title
 pygments: true
+exclude: [node_modules, Gruntfile.js, package.json, README.md]
 destination: public
 
 navigation:
