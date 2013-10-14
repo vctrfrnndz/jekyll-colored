@@ -6,5 +6,5 @@ js:
 ---
 
 <section id="photogrid" class="grid grid-photos">
-    <div class="loader centered">Loading...</div>
+    
 </section>

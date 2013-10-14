@@ -1,5 +1,7 @@
 name: "Víctor Fernández"
-description: "Front-end developer and designer"
+tagline: "Front-end developer and designer"
+description: "Víctor Fernández is a designer and web developer from Venezuela, currently working for R/GA Buenos Aires. This is his personal website."
+
 url: "http://localhost:4000"
 paginate: 10
 markdown: maruku
@@ -11,12 +13,10 @@ destination: public
 navigation:
 - text: Writing
   url: /
-- text: Pictures
-  url: /pictures
 - text: Projects
   url: /projects
-- text: Colophon
-  url: /colophon
+- text: About
+  url: /about
 
 social:
 - name: Twitter

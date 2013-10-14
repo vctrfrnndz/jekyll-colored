@@ -2,7 +2,8 @@
  * kick.less v0.2.2 by @vctrfrnndz (http://vctrfrnndz.com/projects/kick)
  */
 .inner {
-  padding: 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .individual .logo .label {
   display: none;
@@ -80,7 +81,8 @@
   float: right;
 }
 .colophon {
-  padding: 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 2em;
   padding-bottom: 2em;
 }

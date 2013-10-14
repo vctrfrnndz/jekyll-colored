@@ -2,7 +2,7 @@
 @import url("../fonts/vctrfrnndz/style.css");
 
 //
-// Variables and Lols
+// Variables
 //
 
 @transparentBg: rgba(0, 0, 0, 0.1);
@@ -207,8 +207,7 @@ img {
 
 .content {
     padding-top: 1em;
-    padding-bottom: 1em;
-    min-height: 700px;
+    padding-bottom: 2em;
 
     a {
         text-decoration: underline;
@@ -255,7 +254,8 @@ img {
     padding-top: 2em;
     padding-bottom: 2em;
 
-    background-color: @transparentBg;
+    border-top: 1px solid @transparentBg;
+    background: @transparentBg;
 
     a {
         font-weight: bold;
@@ -329,6 +329,14 @@ img {
             }
         }
     }
+}
+
+//
+// Home
+//
+
+.posts-list {
+    font-size: 80%;
 }
 
 //

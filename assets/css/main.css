@@ -381,8 +381,7 @@ img {
 }
 .content {
   padding-top: 1em;
-  padding-bottom: 1em;
-  min-height: 700px;
+  padding-bottom: 2em;
 }
 .content a {
   text-decoration: underline;
@@ -416,7 +415,8 @@ img {
 .colophon {
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 .colophon a {
   font-weight: bold;
@@ -503,6 +503,9 @@ img {
 }
 .grid.grid-photos .item img {
   width: 100%;
+}
+.posts-list {
+  font-size: 80%;
 }
 .highlight {
   background-color: #073642;

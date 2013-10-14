@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<article class="introduction">
+    <h2>I love making great websites.</h2>
+</article>
+
+<section class="posts-list">
 {% for post in paginator.posts %}
             <article class="post">
                 <time class="date">{{ post.date }}</time>
@@ -9,3 +14,4 @@ layout: default
                 <hr>
             </article>
 {% endfor %}
+</section>

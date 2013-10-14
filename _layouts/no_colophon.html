@@ -1,12 +1,10 @@
 {% include header.html %}
             <section class="content inner">
-                <article class="post post-single">
-                    {% if page.date %}
-                    <time class="date">{{ page.date }}</time>
-                    {% endif %}
+                <article class="page page-single">
                     <h2>{{ page.title }}</h2>
+                    <p class="centered">{{ page.description }}</p>
+
                     {{ content }}
                 </article>
             </section>
-{% include colophon.html %}
 {% include footer.html %}
