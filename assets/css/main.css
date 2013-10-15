@@ -405,6 +405,10 @@ img {
 .content article + article hr {
   display: none;
 }
+.page-description {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
 .date {
   display: block;
   opacity: 0.5;
@@ -457,6 +461,30 @@ img {
 .individual article h2 {
   padding-right: 1em;
 }
+.individual article {
+  font-size: 1.2em;
+}
+.projects img {
+  width: 100%;
+}
+.projects a {
+  text-decoration: none;
+}
+.projects .project {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.1);
+}
+.projects .project:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.projects .project .title {
+  text-align: left;
+  font-size: 1.2em;
+}
+.projects .project p {
+  padding: 0;
+  margin: 0;
+}
 .grid {
   *zoom: 1;
   width: auto;
@@ -504,8 +532,38 @@ img {
 .grid.grid-photos .item img {
   width: 100%;
 }
-.posts-list {
-  font-size: 80%;
+.skills {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+.skills li {
+  *zoom: 1;
+}
+.skills li:before,
+.skills li:after {
+  content: " ";
+  display: table;
+}
+.skills li:after {
+  clear: both;
+}
+.skills .name {
+  float: left;
+  width: 40%;
+}
+.skills .bar {
+  float: left;
+  width: 60%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.skills .bar .lvl {
+  height: 10px;
+  background: black;
 }
 .highlight {
   background-color: #073642;

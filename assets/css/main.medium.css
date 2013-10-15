@@ -73,6 +73,8 @@
 }
 .content .centered {
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .content .float-l {
   float: left;

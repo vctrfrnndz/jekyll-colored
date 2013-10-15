@@ -6,6 +6,7 @@
 //
 
 @transparentBg: rgba(0, 0, 0, 0.1);
+@transparentBgDarker: rgba(0, 0, 0, 0.2);
 
 //
 // Generalia
@@ -236,6 +237,11 @@ img {
     }
 }
 
+.page-description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
 .date {
     display: block;
 
@@ -303,6 +309,43 @@ img {
     article h2 {
         padding-right: 1em;
     }
+    
+    article {
+        font-size: 1.2em;
+    }
+}
+
+//
+// Projects
+//
+
+.projects {
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .project {
+        padding: 1em;
+        background: @transparentBg;
+
+        &:hover {
+            background: @transparentBgDarker; 
+        }
+
+        .title {
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        p {
+            .reset-spacing;
+        }
+    }
 }
 
 //
@@ -332,12 +375,36 @@ img {
 }
 
 //
-// Home
+// Skills
 //
 
-.posts-list {
-    font-size: 80%;
+
+.skills {
+    .reset-this;
+    
+    li {
+        .group;
+    }
+
+    .name {
+        float: left;
+        width: 40%;
+    }
+
+    .bar {
+        float: left;
+        width: 60%;
+        height: 10px;
+        background: @transparentBg;
+
+        .lvl {
+            height: 10px;
+            background: black;
+        }
+    }
 }
+
+
 
 //
 // Code Higlighting

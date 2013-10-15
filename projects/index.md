@@ -10,16 +10,18 @@ projects:
 - name: Kick
   description: Kick is a lightweight Less.js mixin library that makes CSS even easier to work with.
   url: http://github.com/vctrfrnndz/Kick
-- name: Decepticons
-  description: Decepticons is an icon font fully featuring icons designed by myself.
-  url: http://github.com/vctrfrnndz/Decepticons
 ---
 
-<section>
+<section class="projects">
 {% for project in page.projects %}
-    <article class="project">
-        <a href="{{ project.url }}">{{ project.name }}</a>
-        <p>{{ project.description }}</p>
-    </article>
+    {% if project.image %}
+      <img src="{{ project.image }}" alt="{{ project.name }}">
+    {% endif %}
+    <a href="{{ project.url }}">
+      <article class="project">
+          <h2 class="title">{{ project.name }} <span class="icon icon-github"></span></h2>
+          <p class="description">{{ project.description }}</p>
+      </article>
+    </a>
 {% endfor %}
 </section>
